@@ -272,13 +272,15 @@ ol {
 
 /* Logo shrink on scroll */
 .header__logo img {
-  width: 180px;
+  margin-top: 5px;
+  width: 140px;
   height: auto;
   transition: all 0.3s ease;
 }
 
 .header.scrolled .header__logo img {
-  width: 120px;
+  padding-top: 5px;
+  width: 140px;
 }
 
 /* Mobile adjustment */
@@ -2839,6 +2841,11 @@ ol {
     padding: 12px 15px;
     float: none;
     background: #5c00ce;
+  }
+
+   /* When header shrinks on scroll */
+  .header.scrolled .slicknav_btn {
+    top: 12px; /* adjust for scrolled state */
   }
   .slicknav_nav {
     position: absolute;
